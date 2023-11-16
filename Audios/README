@@ -1,0 +1,47 @@
+markdown
+# TextsToOneAudio
+
+TextsToOneAudio is a Python script that converts text from PDF files into a single MP3 audio file. This script uses the Google Text-to-Speech (gTTS) library to generate audio for each page of the PDF and then combines them into a final audio file.
+
+## Prerequisites
+
+Make sure you have the required Python libraries installed. You can install them using:
+
+```bash
+pip install gtts PyPDF2 pydub
+```
+
+## Usage
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/TextsToOneAudio.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd TextsToOneAudio
+   ```
+
+3. Modify the `pdf_directory` and `audio_directory` variables in `main.py` to point to your PDF files and desired audio output directory.
+
+4. Run the script:
+
+   ```bash
+   python main.py
+   ```
+
+5. The final audio file (`final_audio.mp3`) will be created in the specified `audio_directory`, and individual audio segments will be deleted.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [gTTS (Google Text-to-Speech)](https://github.com/pndurette/gTTS) - Python library and CLI to interface with Google Text-to-Speech API.
+- [PyPDF2](https://pythonhosted.org/PyPDF2/) - Python library for reading PDF files.
+- [pydub](http://pydub.com/) - Python library for audio processing.
+
